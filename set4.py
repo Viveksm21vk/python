@@ -1,0 +1,16 @@
+s1 = set()
+s2 = set()
+n1 = int(input("Please enter number of elements need to be stored in set 1: "))
+n2 = int(input("Please enter number of elements need to be stored in set 2: "))
+for i in range(n1):
+    s1.add(int(input("Enter a element: ")))
+for i in range(n2):
+    s2.add(int(input("Enter a element: ")))
+print(f"set 1: {s1}")
+print(f"set 2: {s2}")
+print(s1.union(s2))
+print(s1.intersection(s2))
+print(s1.difference(s2))
+print(s2.difference(s1))
+print(s1.issubset(s1))
+print(s1.issuperset(s1))
